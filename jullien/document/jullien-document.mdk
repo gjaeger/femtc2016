@@ -246,7 +246,7 @@ and must be chosen according to the required precision (see section [#sec-statis
 
 ~ TableFigure { #table-1; caption: "Confidence intervals of the 95^th^ percentile for 100, 200, 500, 1,000 and 5,000 simulations"; .wide }
 |                        |------------------------------|------------------------------|
-|                        | confidence interval          | Width of confidence interval |
+|                        | Confidence interval          | Width of confidence interval |
 |                        | of the 95^th^ percentile (s) | of the 95^th^ percentile (s) |
 |:-----------------------|:----------------------------:|:----------------------------:|
 | 100&nbsp;simulations   | [76.9&nbsp;;&nbsp;82.6]      | 5.7                          |
