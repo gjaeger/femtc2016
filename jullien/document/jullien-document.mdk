@@ -153,8 +153,6 @@ each side (figure [#fig4_2]). Each occupant occupies one complete node.
 Two occupants cannot coexist on the same node. The exits are 3&nbsp;m of wide,
 and their flow rate is 2.0&nbsp;occupant/m/s.
 
-
-
 &pagebreak;
 
 ~ Figure { #fig4_2; caption:"Test case geometry";  page-align:forcehere}
