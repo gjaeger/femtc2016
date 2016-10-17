@@ -36,7 +36,7 @@ convective part released by the common natural fires with diffusion flames.
 
 The system can release a total power of 1,20 MW, which considered as a pure convective heat source, is equivalent to a natural fire of 1'80 MW. This equivalence considers the standard ratio 2/3 of the total heat released as convective heat and 1/3 as radiation heat. This ratio could be adjusted for each fuel if needed.
 
-This paper summarizes the main results obtained during the development of the hot smoke testing system regarding its modeling in FDS. The entire work was submitted as master thesis within the International  Master of Science in Fire Safety Engineering program.
+This paper summarizes the main results obtained during the development of the hot smoke testing system regarding its modeling in FDS. The entire work was submitted as master thesis within the International  Master of Science in Fire Safety Engineering program [@Juanjo].
 
 ## A brief description of the work context 
 
@@ -50,7 +50,7 @@ Different equations and models are available in literature to calculate the plum
 
 The processes with premixed flames are normally used normally in closed environments such as industrial ovens, in which the main interest is the combustion efficiency rather than the plumes development and thus, the phenomena is not documented enough.
 
-The rectangular geometry of the burning chamber, made also impossible to consider these traditional models mainly based on experiments with circular fire sources such as the Heskestad plume model [@ ] and extrapolate their results.
+The rectangular geometry of the burning chamber, made also impossible to consider these traditional models mainly based on experiments with circular fire sources such as the Heskestad plume model [@Drysdale:TeX] and extrapolate their results.
 
 A new framework had to be developed to study the temperature field in the plume created by Izar. The decision was to study the temperature field in the plume modeling the system with FDS. 
 
@@ -62,7 +62,7 @@ The solution to simulate premixed flames consists of modeling the combustion lik
 
 Izar uses propane gas as source of energy. The physical properties of the combustible are well documented in the literature. 
 The flame temperature is one of these and it is the main model parameter. The combustion in Izar occurs under stoichiometric conditions achieving very high combustion efficiencies, 
-an very high temperatures. The chosen flame temperature is the adiabatic temperature with dissociation. For the propane this temperature is 1995 °C (ref Drysdale !!!!). Above the combustion region, the plume can be represented using the fluid dynamic equations available in FDS.
+an very high temperatures. The chosen flame temperature is the adiabatic temperature with dissociation. For the propane this temperature is 1995 °C [@Drysdale:TeX]. Above the combustion region, the plume can be represented using the fluid dynamic equations available in FDS.
 
 The plume contains the combustion products generated during the combustion. In the diffusion flames the efficiency of the combustion process defines the amount of products and particles which are commonly called smoke.
 However in a premixed combustion these combustion products are well known and do not change under different environment conditions. By a simple chemical balance its is possible to calculate these combustion products and the amount of them:
@@ -208,25 +208,27 @@ Figure [#temp-sensor-manegg] shows three position comparison between both temper
 ~ Begin SubFigureRow
 ~ SubFigure { #sensor 1; caption: "5 m distance, 25 cm under the ceiling"}
 
+
 ![Sensor 1]
 ~
 ~ SubFigure { #sensor 2; caption: "10 m distance, 75 cm under the ceiling"}
-
 ![sensor2]
-[Sensor 1]: images/Sensor-1.jpg "Sensor 1" { width:auto; max-width:110% }
 
-[sensor2]: images/sensor2.jpg "sensor2" {width:auto; max-width:110%}
+[sensor2]: images/sensor2.jpg "sensor2" { width:auto; max-width:90% }
 
+[Sensor 1]: images/Sensor-1.jpg "Sensor 1" { width:auto; max-width:90% }
 ~
 
 ~ SubFigure { #sensor 3; caption: "20 m distance, 125 cm under the ceiling"} 
 
 ![sensor3]
+
+[sensor3]: images/sensor3.jpg "sensor3" { width:auto; max-width:90% }
+
 ~
 ~ End SubFigureRow
 ~ End Figure
 
-[sensor3]: images/sensor3.png "sensor3" {width:auto; max-width:110%}
 
 # Conclusion
 
@@ -259,5 +261,5 @@ These temperature measurements can be used to calibrate and validate the FDS geo
 
 These kind of "a priori" validated simulations offer a greater grade of confidence and may reduce the safety factors taken in the design of the smoke management systems and thus, optimizing the solutions.
 
-
 ## References   {-}
+[BIB]
