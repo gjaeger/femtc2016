@@ -212,7 +212,7 @@ document).
 ~ Figure { #fig5_1; caption:"Distribution function for 100 simulations and lower and upper bounds of the confidence interval (reference test case)";  page-align:forcehere}
 ![fig5_1]
 ~
-[fig5_1]: images/fig5_1.PNG "fig5_1" { width:auto; max-width:65% }
+[fig5_1]: images/fig5_1.PNG "fig5_1" { width:auto; max-width:60% }
 
 ~ Figure { #fig5_2; caption:"Distribution function for 1,000 simulations and lower and upper bounds of the confidence interval (reference test case)";  page-align:forcehere}
 ![fig5_2]
