@@ -1,6 +1,6 @@
 [INCLUDE=style/lncs]
 
-Title       : The Challenge in Maintaining FDS and CFAST
+Title       : The Challenge of Maintaining FDS and CFAST
 Author      : Kevin McGrattan
 address     : National Institute of Standards and Technology, Gaithersburg, Maryland, USA
 
@@ -16,6 +16,7 @@ name-references : REFERENCES
 The paper presents the day to day challenges of maintaining and developing complex open source software.
 ~ End Abstract
 
+# Introduction
 
 The Fire Dynamics Simulator (FDS) has been in the public domain for 16 years, and the zone fire model CFAST (Consolidated Fire and Smoke Transport) has been around, in one form or another, for nearly twice that long. While both are widely used and well regarded within the fire protection community, most end users do not fully appreciate the challenge of thier maintenance and upkeep. This is true of most of the free and very useful publicly available open source software that we have come to rely on. Indeed, I am composing this paper using a new document preparation software tool named Madoko that I just discovered yesterday. I had a similar experience 26 years ago when I wrote my doctoral thesis using TeX, even before LaTeX became popular outside the mathematics community.
 
@@ -25,9 +26,7 @@ But this is not the case with FDS and CFAST. Their development is an integral pa
 
 This presents two fundamental challenges. First, researchers have historically viewed archival journals as the primary means of communicating their findings. Second, end users often regard these models as black boxes that spit out results and require little in the way of understanding basic fire phenomena. These two challenges have forced the model developers to do far more than just numerically solve the ordinary and partial differential equations that describe basic fire behavior. The long term viability of software like FDS and CFAST will require a considerable change in attitude of both researchers and end users because it is becoming increasingly difficult for the model developers to play all three roles -- researcher, software developer, end user. No doubt, we cannot avoid completely all three, but if the perception in the community that NIST or similar organization can do it all, then the effort will certainly fail.
 
-<!--% ------------------------------------------------------------------>
 # A Brief History of FDS 
-
 
 I jointed the staff of the Fire Research Division of the National Institute of Standards and Technology in 1992, after working for about a year as a post-doctoral fellow in the Computing and Applied Mathematics Laboratory of NIST. The year before, I had graduated from the Courant Institute of New York University with a doctorate in mathematics. I assumed that I would eventually make my way to a teaching position at a university. However, teaching jobs were not easy to come by, and when offered a job in the fire research division, I jumped at the chance. I knew nothing about fire, but it sounded interesting. At that age, everything sounds interesting. For the next few years, I worked three very different projects: (1) CFD fire calculations with Ron Rehm and Howard Baum, (2) microgravity flame spread calculations with Takashi Kashiwagi, and (3) mesoscale oil fire plume dispersion with Dave Evans and Doug Walton. On any given day, I worked on three separate simulation programs, with length scales ranging from millimeters to kilometers.
 
@@ -47,8 +46,6 @@ So the lesson to be learned from CFAST is that it's fairly easy to develop a fir
 
 # A Path Forward 
 
-
-
 For those of you who are interested in fire research, and you want to improve these fire modeling programs, do the following:
 
 
@@ -58,7 +55,7 @@ For those of you who are interested in fire research, and you want to improve th
 
 * Learn Git, LaTeX, Matlab, Fortran, and whatever other software we use to maintain the codes and supplemental materials. You need not be an expert in any of these, but you will benefit tremendously from the investment, even if your career path veers away from fire, which in most cases it inevitably will. These are the tools that we use in our virtual laboratory, and much like a real lab, you simply cannot work without knowing how to use the tools. After working with these tools for a while, you will find that the basic Microsoft Office Suite is not particularly useful for doing serious technical work. 
 
-* If you want to publish your work in a journal, work within the FDS or CFAST GitHub repositories to document your contribution. Consider this activity to be of mutual benefit &ndash; you can share your work with a larger audience through the journal, and have a direct impact on the model users and developers. Much of the push back that we get from professors is that the students must write a thesis and follow-up paper(s), and that they see documenting the work in the FDS or CFAST repository is extra work. In fact, it need not be extra work at all, save for perhaps a bit of cutting and pasting from the model documents into the thesis. LaTeX or a markdown language such as the one used to create this paper help considerably in this effort.
+* If you want to publish your work in a journal, work within the FDS or CFAST GitHub repositories to document your contribution. Consider this activity to be of mutual benefit -- you can share your work with a larger audience through the journal, and have a direct impact on the model users and developers. Much of the resistance that we get from professors is that the students must write a thesis and follow-up paper(s), and that they see documenting the work in the FDS or CFAST repository is extra work. In fact, it need not be extra work at all, save for perhaps a bit of cutting and pasting from the model documents into the thesis. LaTeX or a markdown language such as the one used to create this paper help considerably in this effort.
 
 For those of you who use our models for day to day fire protection engineering, be a smart user. When something doesn't seem quite right in one of your calculations, spend some time and put together a simple test case for us to debug. Yes, this will cost you precious time, but it will lead to better understanding of the model and help you in the long run. Consider it an investment that is well worth it.
 
