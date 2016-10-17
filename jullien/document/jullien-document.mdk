@@ -570,7 +570,7 @@ Table [#table-10] summarizes the influences of the different parameters tested i
 
 ~ TableFigure { #table-10; caption: "Synthesis of the parameters statistical influence study"; .wide ; page-align:forcehere}
 |-----------------------------------------|-------------------------------------------------|-----------------------|
-| Studied parameters                      | variation range                                 | Qualitative influence |
+| Studied parameters                      | Variation range                                 | Qualitative influence |
 |                                         | of the input parameter                          |                       |
 |:---------------------------------------:|:-----------------------------------------------:|:---------------------:|
 | Number of occupant                      | from 1 to 1,000 persons                         | Very important        |
