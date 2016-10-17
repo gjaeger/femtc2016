@@ -9,7 +9,7 @@ Email         : gregor.jaeger@bft-cognos.de
 
 Colorizer     : javascript
 Bib style     : plainnat
-Bibliography  : example
+Bibliography  : references
 Logo          : True
 
 Doc class     : [10pt]article
@@ -26,27 +26,27 @@ follow
 
 ## Performance-based fire safety design in germany
 
-Fire safety design is traditionally satisfactory if the building complies with the requirements in building codes. The accordance with the requirements leads to a ``safe'' building by definition. The codes are very constrictive to the layout and the material requirements.
+Fire safety design is traditionally satisfactory if the building complies with the requirements in building codes. The accordance with the requirements leads to a "safe" building by definition. The codes are very constrictive to the layout and the material requirements.
 
 Since 1978, the directive for industrial buildings in conjunction with DIN 18230 [@DIN18230-1:2010EN] is the only native performance-based design approach in Germany. It regulates the determination of the required fire resistance time of components and the acceptable fire compartment area for industrial buildings. Basic principles for fire safety engineering are solely published in sub-statutory reports, guidelines and specifications.
 
-The goal of the German Fire Protection Association (GFPA) (Vereinigung zur Förderung des Deutschen Brandschutzes e.~V. -- vfdb) Section 4 ``Fire Protection Engineering'' is to upgrade the modern fire protection engineering methods developed in the last years. Further-on it is the aim to make this upgrade available for daily applications in terms of of a guideline \cite{vfdb2013}. In the scope of fire protection concepts, this guideline is intended to contribute to harmonise disjointed approaches and assumptions and to avoid erroneous measures in the application of engineering methods.
+The goal of the German Fire Protection Association (GFPA) (Vereinigung zur Förderung des Deutschen Brandschutzes e.~V. -- vfdb) Section 4 "Fire Protection Engineering" is to upgrade the modern fire protection engineering methods developed in the last years. Further-on it is the aim to make this upgrade available for daily applications in terms of of a guideline [@vfdb2013EN]. In the scope of fire protection concepts, this guideline is intended to contribute to harmonise disjointed approaches and assumptions and to avoid erroneous measures in the application of engineering methods.
 
 ## Standardisation activities in germany 
 
-In the year 2008, the DIN working committee NA 005-52-21 AA \glqq Brandschutzingenieurverfahren\grqq\ started its work to standardise fire safety engineering methods in Germany. The committee is also the national mirror committee for the international respectively European committees ISO/TC 92/SC 4 and CEN/TC 127/WG 8. The first issue of DIN 18009 Part 1 \cite{DIN18009-1:2016-09EN} was published in september 2016. Currently, two working groups are framing the technical sub documents "Evacuation and Life Safety" and "Fire Scenarios".
+In the year 2008, the DIN working committee NA 005-52-21 AA "Brandschutzingenieurverfahren started its work to standardise fire safety engineering methods in Germany. The committee is also the national mirror committee for the international respectively European committees ISO/TC 92/SC 4 and CEN/TC 127/WG 8. The first issue of DIN 18009 Part 1 [@DIN18009-1:2016-09EN] was published in september 2016. Currently, two working groups are framing the technical sub documents "Evacuation and Life Safety" and "Fire Scenarios".
 
 ### DIN 18009 Part 1
 
-In principal, DIN 18009 Part 1 comprises the following engineering methodologies: performance-based, argumentative and experimental; the emphasis is placed on the performance-based line. Irrespective of the question and the chosen method, the fundamental proof is based on the question if the system's resistance is greater than the minimal required resistance for a specific influence. To encourage this concept, guidelines for the identification of protection goals, performance criteria and acceptance criteria are provided. Further on, the framework regulates a classification of scenarios as well as the setup and selection of the latter, see figure \ref{fig:selection_of_design_fires}. Finally, a concept for the inclusion of safety margins and guidelines for the documentation are provided to the practitioners \cite{wiese2014bbt}. 
+In principal, DIN 18009 Part 1 comprises the following engineering methodologies: performance-based, argumentative and experimental; the emphasis is placed on the performance-based line. Irrespective of the question and the chosen method, the fundamental proof is based on the question if the system's resistance is greater than the minimal required resistance for a specific influence. To encourage this concept, guidelines for the identification of protection goals, performance criteria and acceptance criteria are provided. Further on, the framework regulates a classification of scenarios as well as the setup and selection of the latter, see figure \ref{fig:selection_of_design_fires}. Finally, a concept for the inclusion of safety margins and guidelines for the documentation are provided to the practitioners [@wiese2014bbt]. 
 
 ### DIN 18009 Part 2
 
-The first sub document DIN 18009 Part 2 covers evacuation modeling and the life safety assessment during fire and is currently in a first draft state. A special focus of the draft is the identification of representative scenarios and the related translation into parameter samples. Regarding the established model classes to describe pedestrian dynamics, the methodology is designated to cope with different extends of data input and output. A variety of recommendations for data analyses, visualisation and documentation are addressed. Selected insights related to methodology, requirements and scenario-based design are presented in \cite{Jaeger2016}. 
+The first sub document DIN 18009 Part 2 covers evacuation modeling and the life safety assessment during fire and is currently in a first draft state. A special focus of the draft is the identification of representative scenarios and the related translation into parameter samples. Regarding the established model classes to describe pedestrian dynamics, the methodology is designated to cope with different extends of data input and output. A variety of recommendations for data analyses, visualisation and documentation are addressed. Selected insights related to methodology, requirements and scenario-based design are presented in [@Jaeger2016]. 
 
 ### DIN 18009 Part 3
 
-The second sub document DIN~18009 Part 3 covers the design fire scenarios and design fires. A special focus will be the identification of representative scenarios, the design fires and the selection of the fire model. The definition of explicit design fires like \cite{NZ_CVM2,NFPA101:2015} are in discussion. Some ideas related to methodology, requirements and scenario-based design are presented in the next section.
+The second sub document DIN 18009 Part 3 covers the design fire scenarios and design fires. A special focus will be the identification of representative scenarios, the design fires and the selection of the fire model. The definition of explicit design fires like [@NZ_CVM2;@NFPA101:2015] are in discussion. Some ideas related to methodology, requirements and scenario-based design are presented in the next section.
 
 # SELECTION OF DESIGN FIRE SCENARIOS
 
@@ -63,9 +63,8 @@ In anticipation of standardization work on DIN 18009 Part 3, approaches are to b
 ## Performance criteria
 
 A performance based fire protection design serves to ensure a safety level in accordance with building regulations. The evidence should be provided by comparing the defined performance criteria on the resistance side $(R)$ with the respective calculation results on the action side $(A)$. The influencing variables must be selected based on sufficiently conservative assumptions or have to be varied within parameter studies. In order to take account of uncertainties on the part of the individual parameters, the calculation of corresponding partial safety coefficients $\gamma_A$ and $\gamma_R$, is generally carried out as part of a safety concept.
-\begin{displaymath}
-R \cdot \gamma_R \ge A \cdot \gamma_A
-\end{displaymath}
+
+$ R \cdot \gamma_R \ge A \cdot \gamma_A $
 
 The following table provides an example of how quantitative and qualitative requirements can be derived from the respective fire safety goals.
 
@@ -73,7 +72,7 @@ The following table provides an example of how quantitative and qualitative requ
 
 A design fire scenario describes the sequence of a fire event with regard to the effect of all parameters which influence the fire process. Structural and technical fire protection as well as  usage-specific boundary conditions and the behavior of persons are considered. Possible interactions and key events should be placed in a temporal context. The selected fire scenarios are to be dimensioned in such a way that the resulting fire events are only to be exceeded with an extremely low probability by a real fire event. The fire sequence should be quantified by the specification of various parameters, such as the heat release rate or smoke yield, depending on the fire safety goals to be achieved.
 
-The basic procedure for the selection of design fire scenarios according to DIN 18009 Part 1 \cite{DIN18009-1:2015-04} is explained in detail below.
+The basic procedure for the selection of design fire scenarios according to DIN 18009 Part 1 [@DIN18009-1:2015-04EN] is explained in detail below.
 
 ### Identification of fire scenarios based on building utilization
 
@@ -81,10 +80,8 @@ Within a qualitative analysis, the design and utilization of the building, as we
 
 The following events must be taken into account by means of an individual analysis or taking into account fire statistics:
 
-\begin{itemize}
-\item The most common causes of fire
-\item Fire scenarios causing serious damage
-\end{itemize}
+* The most common causes of fire
+* Fire scenarios causing serious damage
 
 ### Definition of critical sites for the source of fire
 
@@ -102,12 +99,10 @@ A fire event can either be discovered and reported by a person or automatically 
 
 The following factors are particularly relevant to the influence on the course of the fire:
 
-\begin{itemize}
-\item Danger of causing a fire
-\item Reaction of the building users to alarming or the detection of a fire
-\item Successful or unsuccessful attempts to extinguish
-\item Opening windows and doors
-\end{itemize}
+* Danger of causing a fire
+* Reaction of the building users to alarming or the detection of a fire
+* Successful or unsuccessful attempts to extinguish
+* Opening windows and doors
 
 Since the reactions of the building users are extremely difficult to estimate or are subject to large scatterings, the influences must be taken into account by the application of appropriate safety factors. Alternatively, conceivable scenarios can be covered by parameter studies.
 
@@ -137,12 +132,10 @@ An assessment of the scenarios can be carried out in the course of a risk analys
 
 Design fires as a basis for fire simulations are described by means of a time-dependent heat release. In addition to normative fire curves, it is also possible to refer to experimentally determined fire sequences or engineering procedures. Standardized procedures for calculating heat release curves (for example DIN 18232-2 or EC 1 \cite{DINEN1991-1-2Eurocode1}) are characterized in particular by the following input variables:
 
-\begin{itemize}
-\item maximum fire area
-\item fire load
-\item heat release rate
-\item fire spread rate
-\end{itemize}
+* maximum fire area
+* fire load
+* heat release rate
+* fire spread rate
 
 Depending on the fire safety goals to be achieved or the functional requirements derived therefrom, it may be necessary to define a detailed combustion reaction  in order to take account of the formation of toxic fire products or soot.
 
@@ -164,12 +157,10 @@ The building is built in solid construction, the individual units are separated 
 
 The following fire safety goals can be derived from the requirements of MBO:
 
-\begin{itemize}
-\item Prevent the fire from starting
-\item Prevent the spread of fire ans smoke
-\item Enabling of escape and rescue
-\item Enabling of effective fire-fighting measures
-\end{itemize}
+* Prevent the fire from starting
+* Prevent the spread of fire ans smoke
+* Enabling of escape and rescue
+* Enabling of effective fire-fighting measures
 
 Since some of the stated objectives can not be achieved by fulfilling prescriptive requirements, appropriate compensation measures must be taken or evidence must be provided to ensure an equivalent level of safety.
 
