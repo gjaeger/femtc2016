@@ -17,6 +17,7 @@ Beamer Theme  : singapore
 4. Cold Flow Multi-scale Modelling Results
 5. Multi-scale Fire Modelling Results
 6. Conclusion
+7. Reference
 
 # Introduction - Team
 
@@ -105,7 +106,7 @@ Beamer Theme  : singapore
 * Cold flow field measurement data available [1]
 * Dartford Tunnel West properties: 
   - 1.5 km long
-  - 14 jet fans pairs (JFP)
+  - 14 jet fans pairs (JFP) with 8.3m^3^/s per fan
 * Key of multi-scale model
   - Interface between 1D and full CFD sections
   - Flow need to be fully developed 
@@ -113,205 +114,145 @@ Beamer Theme  : singapore
 # Multi-scale Modelling - Implementation
   
 
-~ Figure { #fig-figure; caption:"Representation of Multi-scale Model"}
+~ Figure { #fig-figure; caption:"Representation of multi-scale model"}
 ![Fig1]
 
 [Fig1]: images/Fig1.png "Fig1" { width:auto; max-width:70% }
 ~
-* L~p~ is length of portal = 
-* L~JF,UP~ and L~JF,DW~ are length up and downstream of jet fans = xx xx respectively
-* L~fire~ is length each side of fire = 
+* L~p~ is length of portal = 50 m
+* L~JF,UP~ and L~JF,DW~ are length up and downstream of jet fans = 35 m and 130 m respectively
+* L~fire~ is length each side of fire = 170 m
 * Calibrated from running multiple models 
 
 # Cold Flow Modelling Results
 
+* Cold flow modelling results presented separately in Tunnelling and Underground Space Technology [3]
+* Good correlation from 80 m downwind of the jet fans
+* Poorer correlation nearer to jet fans:
+  - Lack of detailed information of installed jet fans
+  - Difficulty to accurately model the jet fans
+  - No accurate measurement of tunnel walls' surface roughness
+
+# Cold Flow Modelling Results
+
+~ Figure { #fig-figure; caption:"Average velocities measured in the tunnel [3]"}
+![fig6_velocity]
+
+[fig6_velocity]: images/fig6_velocity.png "fig6_velocity" { width:auto; max-width:90% }
+
+~
+
+# Cold Flow Modelling Results
+
+~ Figure { #fig-figure; caption:"Multi-scale model velocity profile downwind of jet fans [3]"}
+![fig_100]
+![fig_120]
+
+~
+
+[fig_120]: images/fig_120.png "fig_120" { width:auto; max-width:45% }
+
+[fig_100]: images/fig_100.png "fig_100" { width:auto; max-width:45% }
+
+# Cold Flow Modelling Results
+
+~ Figure { #fig-figure; caption:"Multi-scale model velocity profile downwind of jet fans [3]"}
+![fig_20]
+![fig_40]
+  
+~
+
+[fig_40]: images/fig_40.png "fig_40" { width:auto; max-width:45% }
+
+[fig_20]: images/fig_20.png "fig_20" { width:auto; max-width:45% }
+
+# Cold Flow Modelling Results
+
+~ Figure { #fig-figure; caption:"Reduction in computational time for the multi-scale model"}
+![fig1_time1]
+ 
+~
+
+[fig1_time1]: images/fig1_time1.png "fig1_time1" { width:auto; max-width:55% }
+
 # Multi-scale Fire Modelling Results
+
+* Adapted from the same cold flow multi-scale model
+* Introduction of a fire in the middle of the tunnel
+* Three fire sizes considered, 35 MW, 55 MW and 75 MW 
+* Validation study conducted (Arup Tunnel case)
+* Mass flow rate is the measured variable 
+* Interesting behaviour observed in the multi-scale model
+
+# Multi-scale Fire Modelling Results
+
+* Oscillatory mass flow observed
+* Mass flow rates in multi-scale models do not stabilise compared to the full CFD model
+* It is yet to be determined if the oscillation is numerical
+* Similar oscillation for velocity and temperature observed by Vermesi _et al_ [2]
+
+# Multi-scale Fire Modelling Results
+
+~ Figure { #fig-figure; caption:"Mass flow rates (35 MW) in the tunnel. Left: Mass flow in and out.  Right: Mass flow along the tunnel."}
+![fig4_1]
+![fig4_2]
+
+[Fig4_2]: images/Fig4_2.png "Fig4_2" { width:auto; max-width:45% }
+
+[Fig4_1]: images/Fig4_1.png "Fig4_1" { width:auto; max-width:45% }
+
+~
+
+# Multi-scale Fire Modelling Results
+
+~ Figure { #fig-figure; caption:"Mass flow rates (55 MW) in the tunnel. Left: Mass flow in and out.  Right: Mass flow along the tunnel."}
+![Fig4_3]
+![Fig4_4]
+
+[Fig4_4]: images/Fig4_4.png "Fig4_4" { width:auto; max-width:45% }
+
+[Fig4_3]: images/Fig4_3.png "Fig4_3" { width:auto; max-width:45% }
+
+ 
+~
+
+# Multi-scale Fire Modelling Results
+
+~ Figure { #fig-figure; caption:"Mass flow rates (75 MW) in the tunnel. Left: Mass flow in and out.  Right: Mass flow along the tunnel."}
+![Fig4_5]
+![Fig4_6]
+
+[Fig4_6]: images/Fig4_6.png "Fig4_6" { width:auto; max-width:45% }
+
+[Fig4_5]: images/Fig4_5.png "Fig4_5" { width:auto; max-width:45% }
+
+~
+
+
+
+# Multi-scale Fire Modelling Results
+
+~ Figure { #fig-figure; caption:"Oscillating temperature and velocity in a tunnel fire [3]"}
+![Untitled]
+  
+~
+
+[Untitled]: images/Untitled.png "Untitled" { width:auto; max-width:100% }
 
 # Conclusion
 
-## Reveal.js
+* Multi-scale modelling using FDS6.1 + HVAC is feasible
+* Can be used for cold flow multi-scale modelling
+* Fire modelling using the multi-scale model:
+  - Oscillating mass flow
+  - Mass flow rates do not stabilise compared to the full CFD model
+  - Should not be used until the above two questions can be answered
 
-`reveal.js` is a framework for easily creating beautiful presentations using
-HTML. You'll need a browser with support for CSS 3D transforms to see it in
-its full glory. 
+# Reference
 
-And any Madoko features just work. Here is some math:
+[1] F. Collela, G. Rein, and J. L. Torero. “A Novel Multiscale Methodology for Simulating Tunnel Ventilation Flows During Fires.” _Fire Technology_ 47 (January): 221–253. Jan. 2011.
 
-~ Begin Framed { padding:1ex; margin-top:1ex }
-A famous equation is $e = mc^2$, but this one is 
-famous too:
+[2] I. Vermesi, G. Rein, F. Colella, M. Valkvist, and G. Jomaas. “Reducing the Computational Requirements for Simulating Tunnel Fires by Combining Multiscale Modelling and Multiple Processor Calculation.” _Tunnelling and Underground Space Technology_. 2016.
 
-~ Equation  {#eq-gaussian}
-\int_{-\infty}^\infty e^{-a x^2} d x = \sqrt{\frac{\pi}{a}} 
-~
-~ End Framed
+[3] C.D.E. Ang, G. Rein, J. Peiro, and R. Harrison. “Simulating Longitudinal Ventilation Flows in Long Tunnels: Comparison of Full CFD and Multi-Scale Modelling Approaches in FDS6.” _Tunnelling and Underground Space Technology_ 52 (February): 119–126. Feb. 2016.
 
-~~ Notes
-Oh hey, these are some notes. They'll be hidden in your presentation, but you
-can see them if you open the speaker notes window (hit 's' on your keyboard).
-~~
-
-## Code
-
-Here is code, highlighted by Madoko 
-
-``` javascript
-function sqr( x ) {
-  var \(&pi;\) = 3.141593;
-  return x*x;  /* the square */
-}
-```
-We used `\(` and `\)` to escape into markdown to write &pi;.
-
-<!-- Example of nested vertical slides -->
-~ Begin Vertical { data-background:Gainsboro }
-
-## Vertical Slides {#vertical}
-Slides can be nested inside of other slides,
-try pressing [down].
-
-[![arrowdown]][down]
-
-
-[down]: # { .navigate-down }
-[arrowdown]: images/arrow.png "Down arrow" { width:178px; height:238px }
-
-## Basement Level 1
-Press down or up to navigate.
-
-## Basement Level 2
-
-Use `columns` to put blocks next to each other:
-
-~ Begin Columns
-~ Column { width:50% }
-A monarch butterfly (shown to the right)
-spends the winter in Mexico.
-~
-~ Column
-![butterfly]
-~
-~ End Columns
-
-[butterfly]: images/butterfly.png "A Monarch butterfly" { width:280px; vertical-align:middle }
-
-
-<!-- 
-For local background images, we need to have a reference to the image
-such that it's data gets embedded into the HTML page. We define
-it using "display=none" so it is hidden in the presentation. 
-We can then refer to the image in "data-background-image". 
--->
-
-![bfly]
-[bfly]: images/butterfly.png "Butterfly" { display:none }
-
-## Basement Level 3 { data-background-image:images/butterfly.png }
-That's it, time to go back up.
-
-[![arrowup]][back2]
-
-[arrowup]:  images/arrow.png "Up arrow" { width:178px; height:238px; transform:rotate(180deg) }
-[back2]:    #vertical { .image }
-
-~ End Vertical
-
-
-## Themes {#themes}
-
-Reveal.js comes with a few themes built in:
-
-* [Default](?#/themes)
-* [Sky](?theme=sky#/themes)
-* [Beige](?theme=beige#/themes)
-* [Serif](?theme=serif#/themes)
-* [Simple](?theme=simple#/themes)
-* [Night](?theme=night#/themes)
-* [Moon](?theme=moon#/themes)
-* [Solarized](?theme=solarized#/themes)
-
-Theme demos are loaded after the presentation which leads to flicker. In
-production you should load your theme in the `<head>` using a
-`<link>`.
-
-## Transitions { #transitions }
-
-You can select from different transitions, like:\
-[Cube](?transition=cube#/transitions) -
-[Page](?transition=page#/transitions) -
-[Concave](?transition=concave#/transitions) -
-[Zoom](?transition=zoom#/transitions) -
-[Linear](?transition=linear#/transitions) -
-[Fade](?transition=fade#/transitions) -
-[None](?transition=none#/transitions) -
-[Default](?#/transitions)
-
-
-
-## Pauses?
-
-Some pauses.
-
-* {.fragment} One
-* {.fragment} Two
-* {.fragment} Three
-
-And more:
-
-- Test 1
-- Test 2
-- Test 3
-{.fragmented}
-
-Cool!.
-
-~ Slide
-A slide with no header
-~
-
-
-## Point of View
-
-In Reveal.js Press **ESC** to enter the slide overview.
-
-Hold down alt and click on any element to zoom in on it using 
- [zoom.js]. Alt + click anywhere to zoom back out.
-
-
-[zoom.js]: http://lab.hakim.se/zoom-js
-
-
-## Works in Mobile Safari
-
-Try it out! You can swipe through the slides and pinch your way to the
-overview.
-
-
-## Printing
-
-You can print a `revealjs` presentation nicely from the browser.
-
-First give the `?print-pdf` or `?print-paper` query on your final
-presentation (in the browser address bar) and then print from the Chrome
-browser selecting `Save to PDF`.
-
-Read more about it at the [revealjs documentation](https://github.com/hakimel/reveal.js#pdf-export)
-
-## RevealJS library
-
-Normally, the `revealjs` library is loaded from a CDN but you can specify your
-own url using metadata:
-
-    Reveal Url: <my url>
-
-This can be useful when using a [server to run revealjs](https://github.com/hakimel/reveal.js#full-setup)
-where you may use something like:
-
-    @nopreview Reveal Url: http://localhost:8000/reveal.js
-
-
-## Thanks for looking :-)
-
-[slide]: http://research.microsoft.com/en-us/um/people/daan/madoko/samples/slidedemo/out/slidedemo.html
-[slide-mdk]: https://www.madoko.net/editor.html?#url=http://research.microsoft.com/en-us/um/people/daan/madoko/samples/slidedemo/slidedemo.mdk&options={"delayedUpdate":"true"}
-[slide-pdf]: http://research.microsoft.com/en-us/um/people/daan/madoko/samples/slidedemo/out/slidedemo.pdf
