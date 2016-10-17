@@ -138,7 +138,7 @@ Beamer Theme  : singapore
 ~ Figure { #fig-figure; caption:"Average velocities measured in the tunnel [3]"}
 ![fig6_velocity]
 
-[fig6_velocity]: images/fig6_velocity.png "fig6_velocity" { width:auto; max-width:90% }
+[fig6_velocity]: images/fig6_velocity.png "fig6_velocity" { width:auto; max-width:45% }
 
 ~
 
