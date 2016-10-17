@@ -132,7 +132,7 @@ Furthermore, the confidence interval width decreases when the samples number inc
 Consequently, the required number of draws required by a stochastic analysis is set by:
 
 * the order of the desired percentile,
-* the required precision, which imposes the size of the confidence interval,
+* the required precision, which imposes the size of the confidence interval.
 
 # HYPOTHESIS OF THE MODEL { #sec-hypothesis }
 
