@@ -1,249 +1,211 @@
-[INCLUDE=style/lncs]
-Title         : TITLE OF YOUR PAPER, IN CAPITAL LETTERS CENTERED ON PAGE, USING ONE OR MORE LINES AS NECESSARY
-Subtitle      : An optional subtitle.
+Title         : Fire Scenarios Assessment
+Author        : Kristian Börger
+Affiliation   : BFT Cognos GmbH, Aachen
+Email         : kristian.boerger@bft-cognos.de
 
-Author        : First Author Name
-Affiliation   : Research institute
-Email         : you@bar.com
+Author        : Gregor Jäger
+Affiliation   : BFT Cognos GmbH, Aachen
+Email         : gregor.jaeger@bft-cognos.de
 
-Author        : My co-author 1
-Affiliation   : Other institute
-Email         : other1@bar.com
+Colorizer     : javascript
+Bib style     : plainnat
+Bibliography  : example
+Logo          : True
 
-Author        : My co-author 2
-Affiliation   : Other institute
-Email         : other2@bar.com
-
-Bibliography  : references.bib
-Logo          : False
-Tex Header    :
-  \def\refname{&name-references;}
-name-references : REFERENCES
+Doc class     : [10pt]article
 
 [TITLE]
 
 ~ Abstract
-Papers should follow standard technical paper format, an abstract
-followed by the more detailed presentation. The abstract should be typed
-on this area of the first page, with the presentation following after two
-lines of space.
+follow
 ~
 
-[editor]: https://www.madoko.net/editor.html "Madoko.net Editor"
-[reference-manual]: http://research.microsoft.com/en-us/um/people/daan/madoko/doc/reference.html "Madoko Reference Manual"
-[femtc2016]: https://github.com/thunderheadeng/femtc2016
-[emaillink]: mailto:conference@thunderheadeng.com "conference@thunderheadeng.com"
+# INTRODUCTION
 
-# GENERAL INSTRUCTIONS { #sec-intro }
-You are encouraged to use the [Madoko.net Editor][editor] while using
-the [Madoko Reference Manual][reference-manual] to edit/commit your
-documents into the 'authoring' branch of the [femtc2016] GitHub repository. 
-More information about this method of contribution will be covered below.
+follow
 
-Text styling, links, sub- and super-script, footnotes and other topics
-are covered in section [Syntax: Inline
-elements](http://research.microsoft.com/en-us/um/people/daan/madoko/doc/reference.html#sec-syntax--inline-elements)
-of the manual.
+## Performance-based fire safety design in germany
 
-Headings, Figures and Tables, Lists, Code Blocks, Mathematics, etc. are
-covered in section [Syntax: Block
-elements](http://research.microsoft.com/en-us/um/people/daan/madoko/doc/reference.html#sec-syntax--block-elements)
-of the manual.
+Fire safety design is traditionally satisfactory if the building complies with the requirements in building codes. The accordance with the requirements leads to a ``safe'' building by definition. The codes are very constrictive to the layout and the material requirements.
 
-The target length for submitted and invited papers is about eight pages.
-This length includes all figures and tables. However, because the
-Proceedings will not be printed on paper, there is no maximum limit on
-the number of pages. You are free to exceed the target length of eight
-pages.
+Since 1978, the directive for industrial buildings in conjunction with DIN 18230 [@DIN18230-1:2010EN] is the only native performance-based design approach in Germany. It regulates the determination of the required fire resistance time of components and the acceptable fire compartment area for industrial buildings. Basic principles for fire safety engineering are solely published in sub-statutory reports, guidelines and specifications.
 
-Please watch this short YouTube Video for a tutorial on how to use the system as intended.
+The goal of the German Fire Protection Association (GFPA) (Vereinigung zur Förderung des Deutschen Brandschutzes e.~V. -- vfdb) Section 4 ``Fire Protection Engineering'' is to upgrade the modern fire protection engineering methods developed in the last years. Further-on it is the aim to make this upgrade available for daily applications in terms of of a guideline \cite{vfdb2013}. In the scope of fire protection concepts, this guideline is intended to contribute to harmonise disjointed approaches and assumptions and to avoid erroneous measures in the application of engineering methods.
 
-# MAIN HEADINGS LIKE THIS STYLE
-Main Headings are all upper case letters and underlined. In Madoko, a
-Single '#' symbol at the start of the line, followed by a space and then
-the heading text.
+## Standardisation activities in germany 
 
-## Subheadings Like This Style
-Subheadings within sections follow the same format as section titles, but
-with upper and lower case. In Madoko, a Double '#' symbol at the start of
-the line, followed by a space and then the heading text.
+In the year 2008, the DIN working committee NA 005-52-21 AA \glqq Brandschutzingenieurverfahren\grqq\ started its work to standardise fire safety engineering methods in Germany. The committee is also the national mirror committee for the international respectively European committees ISO/TC 92/SC 4 and CEN/TC 127/WG 8. The first issue of DIN 18009 Part 1 \cite{DIN18009-1:2016-09EN} was published in september 2016. Currently, two working groups are framing the technical sub documents "Evacuation and Life Safety" and "Fire Scenarios".
 
-### Subsubheadings like this style
-Subsubheadings have no underline, and only the first letter capitalized.
-In Madoko, a Triple '#' symbol at the start of the line, followed by a
-space and then the heading text.
+### DIN 18009 Part 1
 
-# FIGURES, TABLES, AND EQUATIONS
-Original drawings and photos may be included in your paper as figures.
-Diagrams may be in color.
+In principal, DIN 18009 Part 1 comprises the following engineering methodologies: performance-based, argumentative and experimental; the emphasis is placed on the performance-based line. Irrespective of the question and the chosen method, the fundamental proof is based on the question if the system's resistance is greater than the minimal required resistance for a specific influence. To encourage this concept, guidelines for the identification of protection goals, performance criteria and acceptance criteria are provided. Further on, the framework regulates a classification of scenarios as well as the setup and selection of the latter, see figure \ref{fig:selection_of_design_fires}. Finally, a concept for the inclusion of safety margins and guidelines for the documentation are provided to the practitioners \cite{wiese2014bbt}. 
 
-Figures and tables should immediately follow first mention of them in the
-text and can be placed in one column, or in the case of wider figures,
-can cover two columns (but only at the top or bottom of the page). The
-caption should start with either the word “figure” spelled out or
-abbreviated, followed by the figure number (i.e., Figure 1 or Fig. 1).
-The figure caption should be followed by a single line of space before
-the text resumes.
+### DIN 18009 Part 2
 
-## Figures
-Figure [#fig-smokeview] in Section [#sec-intro] shows an image from an
-older version of Smokeview. Note that you can drag&drop images into the
-editor pane to include them in the document, and similarly with bibtex
-files, latex style files, etc.
+The first sub document DIN 18009 Part 2 covers evacuation modeling and the life safety assessment during fire and is currently in a first draft state. A special focus of the draft is the identification of representative scenarios and the related translation into parameter samples. Regarding the established model classes to describe pedestrian dynamics, the methodology is designated to cope with different extends of data input and output. A variety of recommendations for data analyses, visualisation and documentation are addressed. Selected insights related to methodology, requirements and scenario-based design are presented in \cite{Jaeger2016}. 
 
-~ Figure { #fig-smokeview; caption:"Illustration of placement of figure and caption. (use the `.wide` class for wide figure)."}
-![Ex1_0]
-~
-[Ex1_0]: images/Ex1_0.png "Ex1_0" { width:auto; max-width:90% }
+### DIN 18009 Part 3
 
-~ Note
-Images larger than about 1Mb in size will be rejected by the Madoko.net server.
-~
+The second sub document DIN~18009 Part 3 covers the design fire scenarios and design fires. A special focus will be the identification of representative scenarios, the design fires and the selection of the fire model. The definition of explicit design fires like \cite{NZ_CVM2,NFPA101:2015} are in discussion. Some ideas related to methodology, requirements and scenario-based design are presented in the next section.
 
-## Tables
-Table [#table-sample] shows an example full width table figure.
+# SELECTION OF DESIGN FIRE SCENARIOS
 
-~ TableFigure { #table-sample; caption: "Modelle mit unterschiedlich geschätztem baseline hazard"; .wide }
-|                | $c(t)$                               ||||
-|                |---------|---------|---------|-----------|
-|                | (A0)    | (A1)    | (A2)    | (A3)      |
-|                | ohne    | Log     | Polynom | Stückweise|
-|                |         |         |         | konstant  |
-|:---------------|:-------:|:-------:|:-------:|:---------:|
-| Log likelihood | -6.798  | -6.733  | -6.715  | -6.686    |
-| Pseudeo $R^{2}$| 0,048   | 0,057   | 0,059   | -         |
-| AIC            | 13.615  | 13.489  | 13.456  | 13.483    |
-| BIC            | 13.711  | 13.594  | 13.580  | 14.009    |
-| N              | 105.484 | 105.484 | 105.484 | 105.484   |
-|----------------|---------|---------|---------|-----------|
-~
+## Methodology and requirements
 
-## Equations
-Standard terminology should be used in equations. If possible, keep
-equations to one column. All equations should be numbered. A definition
-of $e$ is shown in Equation [#euler]:
+Further identification, analysis and assessment of potential fire hazards is usually required if the compliance with fire safety goals according to building regulations is not possible by fulfilling prescriptive specifications. In the course of an qualitative design analysis, the essential boundary conditions in terms of the building type and utilization as well as the fire protection infrastructure are to be recorded in order to identify potential fire scenarios.
 
-~ Equation { #euler }
-e = \lim_{n\to\infty} \left( 1 + \frac{1}{n} \right)^n
-~
+The identified hazards are assessed within a risk analysis and thus represent the starting point for the decision of further engineering evidence. In the subsequent quantitative analysis, the corresponding functional requirements are derived from the respective fire safety goals , which in turn are specified by performance criteria. Based on the relevant scenarios, fire curves are defined, which will not be exceeded  by an actual fire event with a high degree of probability. Due to the application of such worst-credible scenarios the implementation of disproportionate and inefficient structural, plant and organizational measures can be dispensed with.
 
-Or to use &logolatex; to align equations.
+Furthermore, the selection of the used calculation method for fire simulations is of major significance. Depending on the requirements as well as the required accuracy, the fire protection engineer can use analytical handwriting formulas as well as simplified (zone models) and complex simulation models (CFD).
 
-~ Equation { #eq-alignment; caption:"Alignment example" }
-\begin{aligned} 
- f(x)  &= a x^2+b x +c   &   g(x)  &= d x^3 \\
- f'(x) &= 2 a x +b       &   g'(x) &= 3 d x^2
-\end{aligned}
-~
+In anticipation of standardization work on DIN 18009 Part 3, approaches are to be found in order to systematize working sequences of the identification and selection of design fire scenarios.
 
-# FUN CONTENT EXAMPLES
-Let's program some JavaScript:
-``` javascript
-function hello() {
-  return "hello world!"
-}
-```
-Here is a footnote[^fn] reference.
-[^fn]: This is the content of the example footnote. 
-    You can continue a footnote by indenting content.
-    And notice the back link.
+## Performance criteria
 
-# BIBLIOGRAPHY AND REFERENCES
-When references are used in the text, tie them to an alphabetical (by
-principal author) list of references to be included as the last item of
-your paper. The format commonly used in scientific literature follows:
+A performance based fire protection design serves to ensure a safety level in accordance with building regulations. The evidence should be provided by comparing the defined performance criteria on the resistance side $(R)$ with the respective calculation results on the action side $(A)$. The influencing variables must be selected based on sufficiently conservative assumptions or have to be varied within parameter studies. In order to take account of uncertainties on the part of the individual parameters, the calculation of corresponding partial safety coefficients $\gamma_A$ and $\gamma_R$, is generally carried out as part of a safety concept.
+\begin{displaymath}
+R \cdot \gamma_R \ge A \cdot \gamma_A
+\end{displaymath}
 
-Smith, J. S., Bloggs, R. T. and Jones, E. R. (1974), "Magnetic Anomalies
-in Geothermal Systems", Journal of Fluid Mechanics, 254, 73-79
+The following table provides an example of how quantitative and qualitative requirements can be derived from the respective fire safety goals.
 
-Leslie Lamport, LaTeX: A Document Preparation System (2nd Edition), Addison-Wesley, 1994
+## Principles for the description of fire scenarios
 
-When using Madoko, edit the content of the .bib file in the document
-folder, and use the reference methods as shown in the [Bibliography and
-Citations
-Section](http://research.microsoft.com/en-us/um/people/daan/madoko/doc/reference.html#sec-bib)
-of the Madoko Manual.
+A design fire scenario describes the sequence of a fire event with regard to the effect of all parameters which influence the fire process. Structural and technical fire protection as well as  usage-specific boundary conditions and the behavior of persons are considered. Possible interactions and key events should be placed in a temporal context. The selected fire scenarios are to be dimensioned in such a way that the resulting fire events are only to be exceeded with an extremely low probability by a real fire event. The fire sequence should be quantified by the specification of various parameters, such as the heat release rate or smoke yield, depending on the fire safety goals to be achieved.
 
-A bibliography file consists of all your references in the BibTeX format, for example:
+The basic procedure for the selection of design fire scenarios according to DIN 18009 Part 1 \cite{DIN18009-1:2015-04} is explained in detail below.
 
-    @BOOK{ Knuth:TeX,  
-        author   = "Knuth, Donald E.",  
-        title    = "The {\TeX} book",  
-        publisher= "Addison-Wesley",  
-        year     = 1984  
-    }
+### Identification of fire scenarios based on building utilization
 
-Entries in the bibliography files can now be referenced using semi-colon
-separated references, for example:
-``` Markdown 
-Read about LaTeX and TeX [@Knuth:TeX; @Lamport:LaTeX].
-```
-Results in: Read about LaTeX and TeX [@Knuth:TeX; @Lamport:LaTeX].
+Within a qualitative analysis, the design and utilization of the building, as well as the scope of technical fire protection systems shall be recorded. In particular, from the type of use, potential sources of ignition can be derived from the furniture or the stored substances. Furthermore it is necessary to determine which fire products or which combustion heat could be released by the substances in the event of a fire, as well as the resulting risk to people, property values or the load-bearing structure.
 
-Please include full title of journal articles or other references,
-journal, volume, date, pages. There is a nice [table on
-Wikipedia](https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#BibTeX)
-that shows all of the different data fields for the BibTeX file.
+The following events must be taken into account by means of an individual analysis or taking into account fire statistics:
 
-# PAPER DEADLINE
-Your paper, in final form, must be received by October 15th, 2016. The
-best way to edit and submit is to use the Madoko [editor] to edit your
-document in the 'authoring' branch of the GitHub [femtc2016] repository.
-If you choose to use some other document format and editing tool, PDF
-format is preferred, but ODT, DOC, or DOCX formats are acceptable. Please
-e-mail the files to [conference@thunderheadeng.com][emaillink].
+\begin{itemize}
+\item The most common causes of fire
+\item Fire scenarios causing serious damage
+\end{itemize}
 
-# PRESENTATION
-Each author must present his/her paper within the allotted time, allowing
-for some minutes of open discussion. The session chair is responsible for
-keeping authors within their time limit, in order to ensure that each
-author has enough time for their presentation. When preparing your
-presentation slides, make sure they are clear and large enough so that
-your audience can read them from as far as 80 feet away.
+### Definition of critical sites for the source of fire
 
-All presentations will be made using the computer projector available in
-the conference room. We will not have overhead projectors or slide
-projectors in the meeting rooms.
+For individual fire scenarios, different locations are generally considered to be the starting point of a fire with a comparable probability. From this, those are to be selected for further consideration, which are particularly critical regarding the fire safety goal to be achieved. In order to verify that a successful evacuation of the building is possible, for example, fires in the area of the escape routes or fires which make escape routes impassable (e.g. fires in atria) can be considered. In terms of ensuring effective fire-fighting, fire sites are particularly relevant, which are characterized by an extraordinary speed of propagation and which result in a high thermal load on the load-bearing structure. Overall, fires within and outside the building must be considered.
 
-Your presentation, in final form, must be received by **October 15th,
-2016**. A final commit of the files to the GitHub repository is
-preferred. Once the final draft is complete and reviewed it will be
-merged into the master branch of the repository. If you decide to use
-some other tool for creating your presentation, PDF format is preferred,
-but ODP, PPT, or PPTX formats are acceptable. Please e-mail the files
-to [conference@thunderheadeng.com][emaillink].
+### Determination of the effct of factors that influence the fire developement
 
-All presentations will be pre-loaded on the computers that are present.
-Please note that this approach will make it necessary for us to receive
-the presentation files prior to the conference. If you have a different
-software requirement, it should still be possible for you to attach your
-own computer to the projector if you bring it with you. This is not
-optimal, as it takes time and slows down the session.
+The influences on the course of the fire must be derived and quantified from the structural and geometrical as well as technical fire protection conditions. By the location and arrangement of room-closing components, burning areas can be defined, to which the fire event can be reduced. Furthermore, an assessment can be made as to how far a fire impact on adjacent areas can be expected (Traveling Fire). Based on the opening surfaces (windows, doors) including their respective opening criteria, information about the ventilation can be obtained.
 
-# CONFERENCE CONTENT DISTRIBUTION
-The papers and presentation materials will be made available online
-during and after the conference. In addition, the organizers are planning
-to may broadcast live presentations online during the event. The papers,
-presentations, and videos will be archived and made available on the web
-after the conference.
+Technical fire protection measures can be used to limit unrestricted fire spreading directly (automatic fire-extinguishing systems) and indirectly through early fire detection and alarming of the users or the fire brigade. The influence on the course of the fire must be determined taking into account plant-related failure probabilities.
 
-Author(s) retain all rights to submitted material. The organizers are
-granted a non-exclusive right to copy and redistribute conference
-material submitted by the author(s).
+### Determination of the influence of the building users on the fire developement
+
+A fire event can either be discovered and reported by a person or automatically by appropriate detection systems. Depending on the physical and mental condition of the building users, the respective reaction features can be estimated for such an event. From the use of the building, conclusions can usually be drawn to the vigilance, the ability to act independently and the familiarity with the building of the users.
+
+The following factors are particularly relevant to the influence on the course of the fire:
+
+\begin{itemize}
+\item Danger of causing a fire
+\item Reaction of the building users to alarming or the detection of a fire
+\item Successful or unsuccessful attempts to extinguish
+\item Opening windows and doors
+\end{itemize}
+
+Since the reactions of the building users are extremely difficult to estimate or are subject to large scatterings, the influences must be taken into account by the application of appropriate safety factors. Alternatively, conceivable scenarios can be covered by parameter studies.
+
+### Assesment of fire losses
+
+On the basis of the previously defined fire scenarios, the respective consequences should be estimated taking into account the respective fire safety goals. This can be done, for example, by quantifying personal injury or economic damage, such as damage to property or operational failures.
+
+### Assesment of fire risk
+
+By combining the frequency with the consequences, a fire risk can be determined for the individual fire scenarios. If the fire scenarios can not be assigned to different frequencies, all fire scenarios found should be assumed to be equally probable.
+
+### Selection and documentation of the relevant scenarios
+
+For a further consideration, the fire scenarios with the highest risk should be selected. Furthermore, it may be necessary to analyze individual unlikely scenarios in a deterministic way. 
+
+The identification and definition of design fire scenarios operates in mutual interaction with the subsequent fire simulation, so that the entire procedure is to be understood as an iterative process. Based on the calculation results of the fire simulation it may be necessary to adjust input parameters of the scenario. For example, the probable triggering time of an automatic fire extinguishing system can only be determined in relation to the calculated fire temperatures.
+
+## Scenario-based design
+
+The selection of one or more relevant design fire scenarios should be representative of a group of potential scenarios. For the selection of the scenarios, an assessment period is first established, which generally corresponds to the service life of a building. All possible scenarios must be recorded over this period. In principal, the totality of possible fire scenarios are grouped into relevant and non-relevant scenarios. By means of risk, non-relevant scenarios can be differentiated in bagatelle and worst-case scenarios. The risk of a particular scenario is defined as the product of the probability of occurrence and the amount of damage.
+
+Additionally, a trial design may also result in unacceptable scenarios with high risk potentials, which categorically requires a redesign. Relevant scenarios are the centerpiece of the design process. They comprise a set of significant scenarios which are supposed to be represented by design scenarios. The outlined classification is illustrated in Figure \ref{fig:risk}.
+
+An assessment of the scenarios can be carried out in the course of a risk analysis with deterministic methods, for example by expert knowledge or by probabilistic methods.
+
+## Fire modeling
+
+Design fires as a basis for fire simulations are described by means of a time-dependent heat release. In addition to normative fire curves, it is also possible to refer to experimentally determined fire sequences or engineering procedures. Standardized procedures for calculating heat release curves (for example DIN 18232-2 or EC 1 \cite{DINEN1991-1-2Eurocode1}) are characterized in particular by the following input variables:
+
+\begin{itemize}
+\item maximum fire area
+\item fire load
+\item heat release rate
+\item fire spread rate
+\end{itemize}
+
+Depending on the fire safety goals to be achieved or the functional requirements derived therefrom, it may be necessary to define a detailed combustion reaction  in order to take account of the formation of toxic fire products or soot.
+
+The approach of a fire curve  with a square increase in heat release, a constant fully-developed fire stage and a linear decay stage is suitable for many fire protection verifications. In this case, an unobstructed radial fire propagation is assumed, which is limited by the maximum fire load, the ventilation conditions or  extinguishing measures. After 70\% of the calculated fire load has been burned, the heat release decreases linearly to zero.
+
+## Workflow
+
+The DIN 18009 Part 1 describes the basic procedure for the selection of design fire scenarios in seven working steps (see Figure \ref{fig:selection_of_design_fires}). These are explained and supplemented by the following flow chart in figure \ref{fig:workflow}.
+
+# APPLICATION EXAMPLE
+
+## Description of Building
+
+The example shows a three-storey building with different used areas. The ground floor includes a lobby, a restaurant and offices. The floors are connected by an atrium and open stairs. All floors above the ground floor have a similar layout and include offices, meeting rooms and two independent stairwells. The floor plans can be found in figure \ref{fig:floor_plans}.
+
+The building is built in solid construction, the individual units are separated from the atrium by glass elements. The roof structure, which at the same time forms a bracing element of the overall structure, is designed as an unprotected steel frame construction.
+
+## Project scope, goals and performance criteria
+
+The following fire safety goals can be derived from the requirements of MBO:
+
+\begin{itemize}
+\item Prevent the fire from starting
+\item Prevent the spread of fire ans smoke
+\item Enabling of escape and rescue
+\item Enabling of effective fire-fighting measures
+\end{itemize}
+
+Since some of the stated objectives can not be achieved by fulfilling prescriptive requirements, appropriate compensation measures must be taken or evidence must be provided to ensure an equivalent level of safety.
+
+In order to enable effective fire fighting, a sufficient stability of the load-bearing structure in case of fire must be ensured. The required fire resistance of at least 90 minutes according to building regulations can not be guaranteed by the unprotected steel construction without further evidence. The evidence of compliance with the fire safety goal shall be provided by an computational analysis based on a standardized natural fire according to EC 1/NA \cite{DINEN1991-1-2Eurocode1}.
+
+## Exploration of fire scenarios
+
+### Determination of fire scenarios
+
+Due to the utilization, for example, defective electrical equipment such as computers or kitchen equipment as well as the misbehavior of persons can be identified as possible causes of fire. The individual office units as well as the restaurant or the lobby have to be considered as potential locations for the development of a fire. With regard to the fire safety goal to be fulfilled, in particular, scenarios are to be considered which are expected to result in a high thermal load on the roof structure. Taking into account the higher fire load as well as the location, the closer examination is reduced to a fire event in one of the office rooms on the second floor.
+
+### Selection of fire scenarios
+
+Within the area on the second floor, a total of three areas of different sizes, which can be viewed as potential fire areas, are formed by room closing components. Since the probability of occurrence for a specific fire event can not be quantified in detail, it must be assumed to be identical for the three office units because of the comparable utilization. The risk analysis is thus limited to the selection of scenarios with the greatest possible impact.
+
+Taking into account the maximum possible fire area ($A_f = 379 m^2$) as well as the ventilation conditions, a full fire of the office unit 2 can be identified as the decisive design fire scenario with regard to the maximum heat release as well as the fire duration.
+
+### Design fire
+
+Inputs that are related to building utilization such as  heat release rate, fire spread rate and fire load density are calculated according to EC 1. The consideration of uncertainties and failure probabilities of human and technical nature are covered by the safety concept according to EC1/NA (See Table \ref{tab:prob}).
+
+The consequences for human life, as well as economic and environmental damage to be expected in the event of a failure of the load-bearing structure, can be estimated depending on the utilization of the building. As a result, a required reliability and a permissible failure probability can be determined.
+
+# CONCLUSIONS AND OUTLOOK
+
+The article is intended to provide an overview of the current status regarding fire scenario assessment in Germany. First, a brief explanation of the safety level defined by the German building codes and the associated fire safety goals is given. Furthermore the current state of standardization work on DIN 18009 Part 1-3 as well as the content of the respective parts is described.
+
+The recently published Part 1 of DIN 18009 already describes the fundamentals of the system for the selection of design fire scenarios. The described working steps for the identification of possible scenarios up to selection of relevant design scenarios can only be regarded as indications for a performance-based design.
+
+Irrespective of the fire safety goal to be achieved or the performance criteria derived therefrom, the fire event represents the starting point of each fire simulation. Since the factors influencing the fire development are extremely difficult to estimate and subject to a large scatter, a real fire event can never be predicted exactly. It is thus all the more important to ensure that the selected boundary conditions cover all conceivable fire events with a sufficient safety margin.
+
+The application of natural fire scenarios in the course of a performance-based design in Germany is in principle a deviation from building regulations. Furthermore the decision whether or not an fire safety goal is fulfilled by a computational evidence is still with the approving authority. Equivalence of such evidence with descriptive specifications would be desirable as long as an identical level of safety can be ensured.
+From the authors' point of view, the set of standards DIN 18009 is a logical and important step in this direction.
+
+# CLOSING REMARKS
+
+The contents of this article reflect the opinion of the authors and may not be misinterpreted as a direct excerpt of the future standard DIN 18009-3. It may not be understood as the documentation of a complete assessment process. It is rather supposed to record the methodological, technical and regulative considerations made in the past months. Furthermore we aim at international exchange and discussion, which is warmly welcome. The presented approaches, assumptions and conclusions may not be misinterpreted in any context of the prescriptive regulations in Germany.
 
 [BIB]
-
-&pagebreak;
-
-# An appendix { @h1:"A" }
-"All the same, I should like it all plain and clear," said he
-obstinately, putting on his business manner (usually reserved for people
-who tried to borrow money off him), and doing his best to appear wise and
-prudent and professional and live up to Gandalf's recommendation. "Also I
-should like to know about risks, out-of-pocket expenses, time required
-and remuneration, and so forth" -- by which he meant: "What am I going to
-get out of it? and am I going to come back alive?"
-
-# Conclusion
-If you have any questions concerning your paper and/or the Conference,
-please email us at [conference@thunderheadeng.com][emaillink].
