@@ -79,37 +79,38 @@ R \cdot \gamma_R \ge A \cdot \gamma_A
 Table [#tab-goals-performance] provides an example of how quantitative and qualitative requirements can be derived from the respective fire safety goals.
 
 ~ TableFigure {#tab-goals-performance; caption: "Fire safety goals and performance criteria"}
-|-----------------------------------------|-----------------------------------------------------|----------------------------------------------------|
-| fire safety goal                        | functional requirement and qualitative verification | performance criteria for quantitative verification |
-|+---------------------------------------+|+---------------------------------------------------+|+--------------------------------------------------+|
-| prevent the fire from starting          | Restriction of combustible building materials.      | - Standard specification                           |
-|                                         | - proof of usability (abZ, AbP)                     | - Test and and authorisation criteria              |
-|                                         | - Test                                              |                                                    |
-|-----------------------------------------|-----------------------------------------------------|----------------------------------------------------|
-| prevent the spread of fire and smoke    | Limitation of the fire effects to one utilization   | - Test criteria for integrity and/or smoke tightness |
-|                                         | - Fulfillment of material demands                   | - Minimum distance to adjacent building            |
-|                                         | - Proof of fire effects                             | - Standard specifications for room closing compartements | 
-|                                         |                                                     | - max. temperature of heat radiation               |
-|-----------------------------------------|-----------------------------------------------------|----------------------------------------------------|
-| enable the rescue of humans and animals | Safe usability of escape routes for a defined period of time through: | - maximum permissible length and minimal width of rescue routes |
-|                                         | - Fulfillment of material demands on escape routes | - Surrounding structural elements with fire resistance |
-|                                         | - Verification of the evacuation of the building before critical conditions occur | $t_{ASET}$ in line with calculations by hand or evacuation simulation |
-|                                         | $t_{ASET} > t_{RSET}$ | $t_{RSET}$ as a specification or according fire and smoke gas calculation |
-|                                         | Safety of persons when confronted with the effects to: ||
-|                                         | - smoke | - height of smoke-free layer or smoke density or visibility |
-|                                         | - (respiratory)  toxins | - max. gas temperature or heat radiation |
-|                                         | - heat | |
-|                                         | Stability of the construction and integrity of rescue route for the duration of the escape and rescue. Attested by: ||
-|                                         | - Fulfillment of material demands on structural elements | - tabular data (Eurocodes, DIN 4102-4, abZ, abP) |
-|                                         | - Verification by means of simplified or general calculation methods | - e.g. critical steel temperature |
-|                                         |                                                     | - structural fire design of load bearing components |
-|-----------------------------------------|-----------------------------------------------------|----------------------------------------------------|| |
-| enable effective fire fighting          | Stability of the construction and integrity of the attack routes for the duration of the exinguishing work though: ||
-|                                         | - Fulfillment of material demands on structural elements | - Tabular Data (Eurocodes, DIN 4102-4, abZ, abP) |
-|                                         | - early fire detection and alarm                    | - e.g. critical steel temperature |
-|                                         | - provision of adequate visibility through smoke extraction | e.g. minimum smoke extraction surfaces |
-|                                         |                                                     | - target values for optical density visibility |
-|-----------------------------------------|-----------------------------------------------------|----------------------------------------------------|
++-{width:20%}-----------------------------+---{width:40%}---------------------------------------------------------------------+---{width:40%}-------------------------------------------------------------+|                          |
+| **fire safety goal**                    | **functional requirement and qualitative verification**                           | **performance criteria for quantitative verification**                    ||                          |
+|-----------------------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------||                          |
+| prevent the fire from starting          | Restriction of combustible building materials. Verification by:                                                                                              || - Standard specification |
+|                                         |                                                                                   |                                                                           ||                          |
+|                                         | - proof of usability (abZ, AbP)                                                   | - Test and and authorisation criteria                                     ||                          |
+|                                         | - Test                                                                            |                                                                           ||                          |
+|-----------------------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------||                          |
+| prevent the spread of fire and smoke    | Limitation of the fire effects to one utilization                                 | - Test criteria for integrity and/or smoke tightness                      ||                          |
+|                                         | - Fulfillment of material demands                                                 | - Minimum distance to adjacent building                                   ||                          |
+|                                         | - Proof of fire effects                                                           | - Standard specifications for room closing compartements                  ||                          |
+|                                         |                                                                                   | - max. temperature of heat radiation                                      ||                          |
+|-----------------------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------||                          |
+| enable the rescue of humans and animals | Safe usability of escape routes for a defined period of time through:             | - maximum permissible length and minimal width of rescue routes           ||                          |
+|                                         | - Fulfillment of material demands on escape routes                                | - Surrounding structural elements with fire resistance                    ||                          |
+|                                         | - Verification of the evacuation of the building before critical conditions occur | $t_{ASET}$ in line with calculations by hand or evacuation simulation     ||                          |
+|                                         | $t_{ASET} > t_{RSET}$                                                             | $t_{RSET}$ as a specification or according fire and smoke gas calculation ||                          |
+|                                         | Safety of persons when confronted with the effects to:                                                                                                       |||                          |
+|                                         | - smoke                                                                           | - height of smoke-free layer or smoke density or visibility               ||                          |
+|                                         | - (respiratory)  toxins                                                           | - max. gas temperature or heat radiation                                  ||                          |
+|                                         | - heat                                                                            |                                                                           ||                          |
+|                                         | Stability of the construction and integrity of rescue route for the duration of the escape and rescue. Attested by:                                          |||                          |
+|                                         | - Fulfillment of material demands on structural elements                          | - tabular data (Eurocodes, DIN 4102-4, abZ, abP)                          ||                          |
+|                                         | - Verification by means of simplified or general calculation methods              | - e.g. critical steel temperature                                         ||                          |
+|                                         |                                                                                   | - structural fire design of load bearing components                       ||                          |
+|-----------------------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------||                          |
+| enable effective fire fighting          | Stability of the construction and integrity of the attack routes for the duration of the exinguishing work though:                                           |||                          |
+|                                         | - Fulfillment of material demands on structural elements                          | - Tabular Data (Eurocodes, DIN 4102-4, abZ, abP)                          ||                          |
+|                                         | - early fire detection and alarm                                                  | - e.g. critical steel temperature                                         ||                          |
+|                                         | - provision of adequate visibility through smoke extraction                       | e.g. minimum smoke extraction surfaces                                    ||                          |
+|                                         |                                                                                   | - target values for optical density visibility                            ||                          |
+|-----------------------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------||                          |
 { .booktable}
 ~
 
@@ -177,7 +178,7 @@ Additionally, a trial design may also result in unacceptable scenarios with high
 ![risk] 
 ~
 
-[risk]: images/risk.pdf "Scenario classification consisting of relevant scenarios" {width:auto}
+[risk]: images/risk.pdf "Scenario classification consisting of relevant scenarios" {width:100%}
 
 An assessment of the scenarios can be carried out in the course of a risk analysis with deterministic methods, for example by expert knowledge or by probabilistic methods.
 
@@ -198,7 +199,7 @@ The approach of a fire curve  with a square increase in heat release, a constant
 ![hrr]
 ~
 
-[hrr]: images/hrr.pdf "temporal progression of heat release" {width:auto}
+[hrr]: images/hrr.pdf "temporal progression of heat release" {width:100%}
 
 ## Workflow
 
@@ -209,7 +210,7 @@ The DIN 18009 Part 1 describes the basic procedure for the selection of design f
 ![workflow]
 ~
 
-[workflow]: images/workflow.pdf {width:auto}
+[workflow]: images/workflow.pdf {width:100%}
 
 # APPLICATION EXAMPLE
 
@@ -264,14 +265,17 @@ Inputs that are related to building utilization such as  heat release rate, fire
 
 ~ TableFigure {#tab-design_fire; \
   caption: "Probabilites of occourence and failure according to safety concept of DIN EN 1991-1-2/NA [@DINEN1991-1-2NA:2015-09EN]";}
-+--------------------------------------------------------------------------------------|:---------:|:---------:|:---------:|:---------:|
-| Probability ...                                                                      | $p_1$     | $p_{2,1}$ | $p_{2,2}$ | $p_{3}$   |
-|--------------------------------------------------------------------------------------|-----------|-----------|-----------|-----------|
-| of occurrence for an initial fire in an utilization unit                             | $6.2e-03$ |           |           |           |
-| of failure of firefighting measures by users                                         |           | $0.5$     |           |           |
-| of failure of firefighting measures by the fire brigade                              |           |           | $0.2$     |           |
-| of failure of firefighting measures by an automatic extinguishing system             |           |           |           | $1.0$     |
-|--------------------------------------------------------------------------------------|-----------|-----------|-----------|-----------|
++---{width:60%}------------------------------------------------------------+:---------:+:---------:+:---------:+:---------:+
+| **Probability** ...                                                      | $p_1$     | $p_{2,1}$ | $p_{2,2}$ | $p_{3}$   |
+|--------------------------------------------------------------------------|-----------|-----------|-----------|-----------|
+| of occurrence for an initial fire in an utilization unit                 | $6.2e-03$ |           |           |           |
+|--------------------------------------------------------------------------|-----------|-----------|-----------|-----------|
+| of failure of firefighting measures by users                             |           | $0.5$     |           |           |
+|--------------------------------------------------------------------------|-----------|-----------|-----------|-----------|                                               
+| of failure of firefighting measures by the fire brigade                  |           |           | $0.2$     |           |
+|--------------------------------------------------------------------------|-----------|-----------|-----------|-----------|
+| of failure of firefighting measures by an automatic extinguishing system |           |           |           | $1.0$     |
+|--------------------------------------------------------------------------|-----------|-----------|-----------|-----------|
 { .booktable }
 ~
 
@@ -341,7 +345,7 @@ Figure [#fig-hrr] shows the change in heat release for the design fire as a func
 ![hrr_example]
 ~
 
-[hrr_example]: images/hrr_example.pdf {width:auto}
+[hrr_example]: images/hrr_example.pdf {width:100%}
 
 # CONCLUSIONS AND OUTLOOK
 
