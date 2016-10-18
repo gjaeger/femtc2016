@@ -22,23 +22,31 @@ follow
 
 # INTRODUCTION
 
-follow
+In Germany, performance-based design methods are not explicitly embedded in national building codes. Accordingly, the major knowledge, guidance as well as material and product performance is closely linked to the prescriptive design approach. This approach has provided a substantial improvement of fire safety, resulting in a quite safe situation within the built environment at the present time. However, the increasing individuality and complexity of modern buildings or questions related to the conversion of existing buildings may conflict with the applicability or fulfilment of those deemed-to-satisfy requirements. Thus, the performance-based fire safety design has established in Germany as well.
+
+The current work on the DIN 18009 framework is supposed to ensure an adequate and uniform application of the variety of internationally available knowledge and methodologies.
 
 ## Performance-based fire safety design in germany
 
 Fire safety design is traditionally satisfactory if the building complies with the requirements in building codes. The accordance with the requirements leads to a "safe" building by definition. The codes are very constrictive to the layout and the material requirements.
 
-Since 1978, the directive for industrial buildings in conjunction with DIN 18230 [@DIN18230-1:2010EN] is the only native performance-based design approach in Germany. It regulates the determination of the required fire resistance time of components and the acceptable fire compartment area for industrial buildings. Basic principles for fire safety engineering are solely published in sub-statutory reports, guidelines and specifications.
+Since 1978, the directive for industrial buildings [@MIndBauRL2014] in conjunction with DIN 18230 [@DIN18230-1:2010EN] is the only native performance-based design approach in Germany. It regulates the determination of the required fire resistance time of components and the acceptable fire compartment area for industrial buildings. Basic principles for fire safety engineering are solely published in sub-statutory reports, guidelines and specifications.
 
-The goal of the German Fire Protection Association (GFPA) (Vereinigung zur Förderung des Deutschen Brandschutzes e.~V. -- vfdb) Section 4 "Fire Protection Engineering" is to upgrade the modern fire protection engineering methods developed in the last years. Further-on it is the aim to make this upgrade available for daily applications in terms of of a guideline [@vfdb2013EN]. In the scope of fire protection concepts, this guideline is intended to contribute to harmonise disjointed approaches and assumptions and to avoid erroneous measures in the application of engineering methods.
+The goal of the German Fire Protection Association (GFPA) (Vereinigung zur Förderung des Deutschen Brandschutzes e. V. -- vfdb) Section 4 "Fire Protection Engineering" is to upgrade the modern fire protection engineering methods developed in the last years. Further-on it is the aim to make this upgrade available for daily applications in terms of of a guideline [@vfdb2013EN]. In the scope of fire protection concepts, this guideline is intended to contribute to harmonise disjointed approaches and assumptions and to avoid erroneous measures in the application of engineering methods.
 
 ## Standardisation activities in germany 
 
-In the year 2008, the DIN working committee NA 005-52-21 AA "Brandschutzingenieurverfahren started its work to standardise fire safety engineering methods in Germany. The committee is also the national mirror committee for the international respectively European committees ISO/TC 92/SC 4 and CEN/TC 127/WG 8. The first issue of DIN 18009 Part 1 [@DIN18009-1:2016-09EN] was published in september 2016. Currently, two working groups are framing the technical sub documents "Evacuation and Life Safety" and "Fire Scenarios".
+In the year 2008, the DIN working committee NA 005-52-21 AA "Brandschutzingenieurverfahren" started its work to standardise fire safety engineering methods in Germany. The committee is also the national mirror committee for the international respectively European committees ISO/TC 92/SC 4 and CEN/TC 127/WG 8. The first issue of DIN 18009 Part 1 [@DIN18009-1:2016-09EN] was published in september 2016. Currently, two working groups are framing the technical sub documents "Evacuation and Life Safety" and "Fire Scenarios".
 
 ### DIN 18009 Part 1
 
-In principal, DIN 18009 Part 1 comprises the following engineering methodologies: performance-based, argumentative and experimental; the emphasis is placed on the performance-based line. Irrespective of the question and the chosen method, the fundamental proof is based on the question if the system's resistance is greater than the minimal required resistance for a specific influence. To encourage this concept, guidelines for the identification of protection goals, performance criteria and acceptance criteria are provided. Further on, the framework regulates a classification of scenarios as well as the setup and selection of the latter, see figure \ref{fig:selection_of_design_fires}. Finally, a concept for the inclusion of safety margins and guidelines for the documentation are provided to the practitioners [@wiese2014bbt]. 
+In principal, DIN 18009 Part 1 comprises the following engineering methodologies: performance-based, argumentative and experimental; the emphasis is placed on the performance-based line. Irrespective of the question and the chosen method, the fundamental proof is based on the question if the system's resistance is greater than the minimal required resistance for a specific influence. To encourage this concept, guidelines for the identification of protection goals, performance criteria and acceptance criteria are provided. Further on, the framework regulates a classification of scenarios as well as the setup and selection of the latter, see figure [#selection_of_design_fires]. Finally, a concept for the inclusion of safety margins and guidelines for the documentation are provided to the practitioners [@wiese2014bbt]. 
+
+~ Figure { #selection_of_design_fires; caption: "Selection of design fires"}
+![selection_of_design_fires]
+~
+
+[selection_of_design_fires]: images/flowchart_001.pdf "Selection of design fires" {width:auto}
 
 ### DIN 18009 Part 2
 
@@ -62,11 +70,50 @@ In anticipation of standardization work on DIN 18009 Part 3, approaches are to b
 
 ## Performance criteria
 
-A performance based fire protection design serves to ensure a safety level in accordance with building regulations. The evidence should be provided by comparing the defined performance criteria on the resistance side $(R)$ with the respective calculation results on the action side $(A)$. The influencing variables must be selected based on sufficiently conservative assumptions or have to be varied within parameter studies. In order to take account of uncertainties on the part of the individual parameters, the calculation of corresponding partial safety coefficients $\gamma_A$ and $\gamma_R$, is generally carried out as part of a safety concept.
+A performance based fire protection design serves to ensure a safety level in accordance with building regulations. The evidence should be provided by comparing the defined performance criteria on the resistance side $(R)$ with the respective calculation results on the action side $(A)$. The influencing variables must be selected based on sufficiently conservative assumptions or have to be varied within parameter studies. In order to take account of uncertainties on the part of the individual parameters, the calculation of corresponding partial safety coefficients $\gamma_A$ and $\gamma_R$, is generally carried out as part of a safety concept [@Bub1983].
 
-$ R \cdot \gamma_R \ge A \cdot \gamma_A $
+~ Equation
+R \cdot \gamma_R \ge A \cdot \gamma_A
+~
 
-The following table provides an example of how quantitative and qualitative requirements can be derived from the respective fire safety goals.
+Table [#tab-goals-performance] provides an example of how quantitative and qualitative requirements can be derived from the respective fire safety goals.
+
+~ TableFigure {#tab-goals-performance; caption: "Fire safety goals and performance criteria"}
+|-----------------------------------------|-----------------------------------------------------|----------------------------------------------------|
+| fire safety goal                        | functional requirement and qualitative verification | performance criteria for quantitative verification |
+|+---------------------------------------+|+---------------------------------------------------+|+--------------------------------------------------+|
+| prevent the fire from starting          | Restriction of combustible building materials.      | - Standard specification                           |
+|                                         | - proof of usability (abZ, AbP)                     | - Test and and authorisation criteria              |
+|                                         | - Test                                              |                                                    |
+|-----------------------------------------|-----------------------------------------------------|----------------------------------------------------|
+| prevent the spread of fire and smoke    | Limitation of the fire effects to one utilization   | - Test criteria for integrity and/or smoke tightness |
+|                                         | - Fulfillment of material demands                   | - Minimum distance to adjacent building            |
+|                                         | - Proof of fire effects                             | - Standard specifications for room closing compartements | 
+|                                         |                                                     | - max. temperature of heat radiation               |
+|-----------------------------------------|-----------------------------------------------------|----------------------------------------------------|
+| enable the rescue of humans and animals | Safe usability of escape routes for a defined period of time through: | - maximum permissible length and minimal width of rescue routes |
+|                                         | - Fulfillment of material demands on escape routes | - Surrounding structural elements with fire resistance |
+|                                         | - Verification of the evacuation of the building before critical conditions occur | $t_{ASET}$ in line with calculations by hand or evacuation simulation |
+|                                         | $t_{ASET} > t_{RSET}$ | $t_{RSET}$ as a specification or according fire and smoke gas calculation |
+|                                         | Safety of persons when confronted with the effects to: ||
+|                                         | - smoke | - height of smoke-free layer or smoke density or visibility |
+|                                         | - (respiratory)  toxins | - max. gas temperature or heat radiation |
+|                                         | - heat | |
+|                                         | Stability of the construction and integrity of rescue route for the duration of the escape and rescue. Attested by: ||
+|                                         | - Fulfillment of material demands on structural elements | - tabular data (Eurocodes, DIN 4102-4, abZ, abP) |
+|                                         | - Verification by means of simplified or general calculation methods | - e.g. critical steel temperature |
+|                                         |                                                     | - structural fire design of load bearing components |
+|-----------------------------------------|-----------------------------------------------------|----------------------------------------------------|| |
+| enable effective fire fighting          | Stability of the construction and integrity of the attack routes for the duration of the exinguishing work though: ||
+|                                         | - Fulfillment of material demands on structural elements | - Tabular Data (Eurocodes, DIN 4102-4, abZ, abP) |
+|                                         | - early fire detection and alarm                    | - e.g. critical steel temperature |
+|                                         | - provision of adequate visibility through smoke extraction | e.g. minimum smoke extraction surfaces |
+|                                         |                                                     | - target values for optical density visibility |
+|-----------------------------------------|-----------------------------------------------------|----------------------------------------------------|
+{ .booktable}
+~
+
+
 
 ## Principles for the description of fire scenarios
 
@@ -124,13 +171,19 @@ The identification and definition of design fire scenarios operates in mutual in
 
 The selection of one or more relevant design fire scenarios should be representative of a group of potential scenarios. For the selection of the scenarios, an assessment period is first established, which generally corresponds to the service life of a building. All possible scenarios must be recorded over this period. In principal, the totality of possible fire scenarios are grouped into relevant and non-relevant scenarios. By means of risk, non-relevant scenarios can be differentiated in bagatelle and worst-case scenarios. The risk of a particular scenario is defined as the product of the probability of occurrence and the amount of damage.
 
-Additionally, a trial design may also result in unacceptable scenarios with high risk potentials, which categorically requires a redesign. Relevant scenarios are the centerpiece of the design process. They comprise a set of significant scenarios which are supposed to be represented by design scenarios. The outlined classification is illustrated in Figure \ref{fig:risk}.
+Additionally, a trial design may also result in unacceptable scenarios with high risk potentials, which categorically requires a redesign. Relevant scenarios are the centerpiece of the design process. They comprise a set of significant scenarios which are supposed to be represented by design scenarios. The outlined classification is illustrated in Figure [#risk].
+
+~ Figure {#risk; caption: "Scenario classification consisting of relevant scenarios"}
+![risk] 
+~
+
+[risk]: images/risk.pdf "Scenario classification consisting of relevant scenarios" {width:auto}
 
 An assessment of the scenarios can be carried out in the course of a risk analysis with deterministic methods, for example by expert knowledge or by probabilistic methods.
 
 ## Fire modeling
 
-Design fires as a basis for fire simulations are described by means of a time-dependent heat release. In addition to normative fire curves, it is also possible to refer to experimentally determined fire sequences or engineering procedures. Standardized procedures for calculating heat release curves (for example DIN 18232-2 or EC 1 \cite{DINEN1991-1-2Eurocode1}) are characterized in particular by the following input variables:
+Design fires as a basis for fire simulations are described by means of a time-dependent heat release. In addition to normative fire curves, it is also possible to refer to experimentally determined fire sequences or engineering procedures. Standardized procedures for calculating heat release curves (see DIN 18232-2 [@DIN18232-2:2007-11], DIN EN 1991-1-2 [@DINEN1991-1-2:2010-12EN] or DIN EN 1991-1-2/NA [@DINEN1991-1-2NA:2015-09EN]) are characterized in particular by the following input variables:
 
 * maximum fire area
 * fire load
@@ -141,21 +194,48 @@ Depending on the fire safety goals to be achieved or the functional requirements
 
 The approach of a fire curve  with a square increase in heat release, a constant fully-developed fire stage and a linear decay stage is suitable for many fire protection verifications. In this case, an unobstructed radial fire propagation is assumed, which is limited by the maximum fire load, the ventilation conditions or  extinguishing measures. After 70\% of the calculated fire load has been burned, the heat release decreases linearly to zero.
 
+~ Figure {#hrr; caption: "temporal progression of heat release"}
+![hrr]
+~
+
+[hrr]: images/hrr.pdf "temporal progression of heat release" {width:auto}
+
 ## Workflow
 
-The DIN 18009 Part 1 describes the basic procedure for the selection of design fire scenarios in seven working steps (see Figure \ref{fig:selection_of_design_fires}). These are explained and supplemented by the following flow chart in figure \ref{fig:workflow}.
+The DIN 18009 Part 1 describes the basic procedure for the selection of design fire scenarios in seven working steps (see Figure [#selection_of_design_fires]). These are explained and supplemented by the following flow chart in figure [#workflow].
+
+~ Figure {#workflow; \
+  caption: "flow chart for selection of design fire scenarios"}
+![workflow]
+~
+
+[workflow]: images/workflow.pdf {width:auto}
 
 # APPLICATION EXAMPLE
 
 ## Description of Building
 
-The example shows a three-storey building with different used areas. The ground floor includes a lobby, a restaurant and offices. The floors are connected by an atrium and open stairs. All floors above the ground floor have a similar layout and include offices, meeting rooms and two independent stairwells. The floor plans can be found in figure \ref{fig:floor_plans}.
+The example shows a three-storey building with different used areas. The ground floor includes a lobby, a restaurant and offices. The floors are connected by an atrium and open stairs. All floors above the ground floor have a similar layout and include offices, meeting rooms and two independent stairwells. The floor plans can be found in figure [#fig-building].
+
+~ Begin Figure { #fig-building; caption: "Floor plans of the application example consisting of the ground floor and the two overlying floors."}
+~ Begin SubFigureRow
+~ SubFigure {caption: "ground floor"}
+![ground_floor]
+~
+~ SubFigure {caption: "1st/2nd floor"}
+![1st_floor]
+~
+~ End SubFigureRow
+~ End Figure
+
+[ground_floor]: images/groundfloor.png {width:95%}
+[1st_floor]: images/upperfloor.png {width:95%}
 
 The building is built in solid construction, the individual units are separated from the atrium by glass elements. The roof structure, which at the same time forms a bracing element of the overall structure, is designed as an unprotected steel frame construction.
 
 ## Project scope, goals and performance criteria
 
-The following fire safety goals can be derived from the requirements of MBO:
+The following fire safety goals can be derived from the requirements of the German Model Building Code (MBO) [@MBO2016]:
 
 * Prevent the fire from starting
 * Prevent the spread of fire ans smoke
@@ -164,7 +244,7 @@ The following fire safety goals can be derived from the requirements of MBO:
 
 Since some of the stated objectives can not be achieved by fulfilling prescriptive requirements, appropriate compensation measures must be taken or evidence must be provided to ensure an equivalent level of safety.
 
-In order to enable effective fire fighting, a sufficient stability of the load-bearing structure in case of fire must be ensured. The required fire resistance of at least 90 minutes according to building regulations can not be guaranteed by the unprotected steel construction without further evidence. The evidence of compliance with the fire safety goal shall be provided by an computational analysis based on a standardized natural fire according to EC 1/NA \cite{DINEN1991-1-2Eurocode1}.
+In order to enable effective fire fighting, a sufficient stability of the load-bearing structure in case of fire must be ensured. The required fire resistance of at least 90 minutes according to building regulations can not be guaranteed by the unprotected steel construction without further evidence. The evidence of compliance with the fire safety goal shall be provided by an computational analysis based on a standardized natural fire according to DIN EN 1991-1-2/NA [@DINEN1991-1-2NA:2015-09EN].
 
 ## Exploration of fire scenarios
 
@@ -180,9 +260,88 @@ Taking into account the maximum possible fire area ($A_f = 379 m^2$) as well as 
 
 ### Design fire
 
-Inputs that are related to building utilization such as  heat release rate, fire spread rate and fire load density are calculated according to EC 1. The consideration of uncertainties and failure probabilities of human and technical nature are covered by the safety concept according to EC1/NA (See Table \ref{tab:prob}).
+Inputs that are related to building utilization such as  heat release rate, fire spread rate and fire load density are calculated according to DIN EN 1991-1-2[@DINEN1991-1-2:2010-12EN;@DINEN1991-1-2NA:2015-09EN]. The consideration of uncertainties and failure probabilities of human and technical nature are covered by the safety concept according to DIN EN 1991-1-2/NA [@DINEN1991-1-2NA:2015-09EN] (see Table [#tab-design_fire]).
+
+~ TableFigure {#tab-design_fire; \
+  caption: "Probabilites of occourence and failure according to safety concept of DIN EN 1991-1-2/NA [@DINEN1991-1-2NA:2015-09EN]";}
++--------------------------------------------------------------------------------------|:---------:|:---------:|:---------:|:---------:|
+| Probability ...                                                                      | $p_1$     | $p_{2,1}$ | $p_{2,2}$ | $p_{3}$   |
+|--------------------------------------------------------------------------------------|-----------|-----------|-----------|-----------|
+| of occurrence for an initial fire in an utilization unit                             | $6.2e-03$ |           |           |           |
+| of failure of firefighting measures by users                                         |           | $0.5$     |           |           |
+| of failure of firefighting measures by the fire brigade                              |           |           | $0.2$     |           |
+| of failure of firefighting measures by an automatic extinguishing system             |           |           |           | $1.0$     |
+|--------------------------------------------------------------------------------------|-----------|-----------|-----------|-----------|
+{ .booktable }
+~
 
 The consequences for human life, as well as economic and environmental damage to be expected in the event of a failure of the load-bearing structure, can be estimated depending on the utilization of the building. As a result, a required reliability and a permissible failure probability can be determined.
+
+~ Equation
+p_f =1.300e-05
+~
+
+The probability of occurrence  $p_{fi}$ of a destructive fire in a utilization unit in a reference period of 1 year can be determined as follows:
+
+~ Equation
+p_{fi} = p_1 \cdot p_{2,1} \cdot p_{2,2} \cdot p_3 = 6.200e-03 \cdot 0.5 \cdot 0.2 \cdot 1 = 6.200e-04
+~
+
+From this the conditional failure probability in case of fire $p_{f,fi}$ and the linked reliability index $\beta_{fi}$ can be determined as follows:
+
+~ Equation
+p_{f,fi} = \frac{p_f}{p_{fi}} = \frac{1.300e-05}{{6.200e-04}} = 2.097e-02
+~
+
+~ Equation
+\beta_{fi} = -\phi^{-1}(p_{f,fi}) = -\phi^{-1}({2.097e-02}) = 2.034
+~
+
+$\phi( \ )$ is the function of  standard-normal distribution and $\phi^{{-1}}$ is the inverse function of standard-normal distribution.
+The partial safety coefficients for heat release rate $\gamma_{fi,\dot{Q}}$ as well as the fire load density $\gamma_{fi,q}$ can be calculated as a function of the required reliability $\beta_{fi}$ index:
+
+~ Equation
+\gamma_{fi} = \frac{1-V \cdot 0.78 \cdot [0.5772+ln(-ln(\phi(\alpha \cdot \beta_{fi})))]}{1-V \cdot 0.78 \cdot [0.5772+ln(-ln(0.9))]}
+~
+
+The partial safety coefficients can be calculated with the variation coefficients $V_q = 0.3$ (fire load density) and $V_q = 0.2$ (heat release rate). The sensitivity coefficient is assumed to be $\alpha = 0.6$ so that the following partial safety coefficients can be calculated:
+
+~ Equation
+\gamma_{fi,\dot{Q}} = 0.986
+~
+
+~ Equation
+\gamma_{fi,q} = 0.981
+~
+
+The Eurocode specifies the characteristic values for the fire load density ${q}_{f,k}$ and the heat release rate per unit area $RHR_f$ as  90\% quantile.
+For office areas, the following values should be assumed:
+
+~ Equation
+RHR_f = 0.25 MW/m^2
+~
+
+~ Equation
+{q}_{f,k} = 584 MJ / m^2
+~
+
+In general, a combustion effectiveness of $\chi = 0.8$ can be assumed for mixed fire load. The respective design values can be obtained by multiplication with the corresponding partial safety coefficients:
+
+~ Equation
+{q}_{f,d} = \chi \cdot {q}_{f,k} \cdot \gamma_{fi,{q}} = 0.8 \cdot 584 \cdot 0.981 = 572.9  MJ/m^2
+~
+
+~ Equation
+\dot{Q}_{max,d} = A_f \cdot RHR_f \cdot \gamma_{fi,\dot{Q}} =379 \cdot 0.25 \cdot 0.986 = 93.42 MW
+~
+
+Figure [#fig-hrr] shows the change in heat release for the design fire as a function of time.
+
+~ Figure {#fig-hrr; caption: "heat release rate"}
+![hrr_example]
+~
+
+[hrr_example]: images/hrr_example.pdf {width:auto}
 
 # CONCLUSIONS AND OUTLOOK
 
