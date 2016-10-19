@@ -600,7 +600,7 @@ mixed fire load. The respective design values can be obtained by
 multiplication with the corresponding partial safety coefficients:
 
 ~ Equation
-{q}_{f,d} = \chi \cdot {q}_{f,k} \cdot \gamma_{fi,{q}} = 0.8 \cdot 584 \cdot 0.981 = 572.9  MJ/m^2
+{q}_{f,d} = \chi \cdot {q}_{f,k} \cdot \gamma_{fi,{q}} = 0.8 \cdot 584 \cdot 0.981 = 458.3  MJ/m^2
 ~
 
 ~ Equation
